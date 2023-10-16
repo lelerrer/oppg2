@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding-bottom: 7rem;
+}
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space-collapse: preserve;
+}
+.flex1{
+    display: flex;
+    padding: 1rem;
+    background-color: darkgray;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    box-shadow: black 0 5px 8px;
+}
+h1{
+    font-family: "Satisfy";
+    font-size: 200%;
+    flex:auto;
+}
+nav a{
+    color: azure;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex: 1px;
+    font-size: 11pt;
+    text-align: center;
+    align-content:space-evenly;
+    text-decoration: none;
+    border-radius: 8px;
+}
+nav a:hover{
+    background-color: gray;
+}
+main{
+    display: grid;
+    margin-left: 0.5rem;
+    grid-template-columns: repeat(1fr, 8);
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-right: 0.5rem;
+}
+.intro{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color:antiquewhite;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 8rem;
+}
+.intro img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border: 0.25rem black solid;
+    outline: 0.25rem antiquewhite dotted;
+    outline-offset: -0.15rem;
+}
+.mat{
+    grid-column: 4/8;
+    background-color: beige;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+.mat img{
+    width: 18%;
+    height: max-content;
+    border: 0.2rem goldenrod solid;
+}
+.historie{
+    grid-column: 4/8;
+    grid-row: 2;
+    text-align: center;
+    background-color: blanchedalmond; border-radius: 1rem;
+}
+.historie img{
+    transition: 1s;
+    filter: sepia(80%) brightness(80%);
+    height: 15rem;
+    object-fit: cover;
+}
+.historie img:hover{
+    transition: 1s;
+    filter: sepia(0%) brightness(100%);
+}
